@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TargetArcheryDual</title>
+    <link rel="stylesheet" href="TargetArcheryDual.css">
+</head>
+<body>
+<h1>Target Archery Dual</h1>
+<div>
+    <h3>Submit Archer</h3>
+    <table>
+        <tr>
+            <td>
+                <label for="name">Name</label>
+            </td>
+            <td>
+                <input id="name" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="gender">Gender</label>
+            </td>
+            <td>
+                <input id="gender" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="division">Division</label>
+            </td>
+            <td>
+                <select name="division" id="division">
+                    <option value="Recurve">Recurve</option>
+                    <option value="Compound">Compound</option>
+                    <option value="Barebow">Barebow</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button>Submit</button>
+            </td>
+        </tr>
+    </table>
+</div>
+<br>
+<div>
+    <h3>Match setup</h3>
+    <table>
+        <tr>
+            <td>
+                <label for="archer1">Archer 1</label>
+            </td>
+            <td>
+                <select name="archer1" id="archer1">
+                    <option value="Thống">Thống</option>
+                    <option value="Tùng">Tùng</option>
+                    <option value="Thành">Thành</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="archer2">Archer 2</label>
+            </td>
+            <td>
+                <select name="archer2" id="archer2">
+                    <option value="Thống">Thống</option>
+                    <option value="Tùng">Tùng</option>
+                    <option value="Thành">Thành</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="matchType">Match type</label>
+            </td>
+            <td>
+                <select name="matchType" id="matchtype">
+                    <option value="Recurve">Recurve</option>
+                    <option value="Compound">Compound</option>
+                    <option value="Barebow">Barebow</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button>Start</button>
+            </td>
+        </tr>
+    </table>
+</div>
+<br>
+<div>
+    <table>
+        <tr>
+            <th>Archer 1</th>
+            <th>0</th>
+            <th>-</th>
+            <th>0</th>
+            <th>Archer 2</th>
+        </tr>
+        <tr>
+            <td>
+                <input type="number" name="a1Shot1" id="a1Shot1">
+                <input type="number" name="a1Shot2" id="a1Shot2">
+                <input type="number" name="a1Shot3" id="a1Shot3">
+            </td>
+            <td>
+                00
+            </td><td>
+                -
+            </td><td>
+                00
+            </td>
+            <td>
+                <input type="number" name="a2Shot1" id="a2Shot1">
+                <input type="number" name="a2Shot2" id="a2Shot2">
+                <input type="number" name="a2Shot3" id="a2Shot3">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <button>Set</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <button>0</button>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button>10</button>
+                <button>x</button>
+                <button>Del</button>
+            </td>
+        </tr>
+    </table>
+</div>
+<br>
+<div>
+    <table border=1 class="inlineTable">
+        <tr>
+            <th colspan="5">
+                Archer 1
+            </th>
+        </tr>
+        <tr>
+            <th></th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>Total</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <th></th>
+        </tr>
+    </table>
+    <table border=1 class="inlineTable">
+        <tr>
+            <th colspan="5">
+                Archer 2
+            </th>
+        </tr>
+        <tr>
+            <th></th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>Total</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <th></th>
+        </tr>
+    </table>
+</div>
+<div>
+    <table>
+        <tr>
+            <th>No.</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Division</th>
+            <th>Win</th>
+            <th>Lose</th>
+            <th>Ratio</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
