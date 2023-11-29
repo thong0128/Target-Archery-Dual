@@ -23,7 +23,11 @@
                 <label for="gender">Gender</label>
             </td>
             <td>
-                <input id="gender" type="text">
+                <select name="gender" id="gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
             </td>
         </tr>
         <tr>
@@ -40,7 +44,7 @@
         </tr>
         <tr>
             <td colspan="2">
-                <button>Submit</button>
+                <button onclick="addAthlete();showAthleteList()">Submit</button>
             </td>
         </tr>
     </table>
@@ -243,43 +247,21 @@
             <th>Lose</th>
             <th>Ratio</th>
         </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
+        <tbody id="athletelist">
+            <tr>
+                <td>1</td>
+                <td>Nguyễn Văn A</td>
+                <td>Male</td>
+                <td>Recurve</td>
+                <td>1</td>
+                <td>1</td>
+                <td>50%</td>
+            </tr>
+        </tbody>
     </table>
 </div>
+<script src="athlete.js"></script>
+<script src="scoresheet.js"></script>
+<script src="dual.js"></script>
 </body>
 </html>
