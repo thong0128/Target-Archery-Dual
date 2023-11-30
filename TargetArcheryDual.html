@@ -44,7 +44,7 @@
         </tr>
         <tr>
             <td colspan="2">
-                <button onclick="addAthlete();showAthleteList()">Submit</button>
+                <button onclick="addAthlete();showAthleteList();selectAthleteList()">Submit</button>
             </td>
         </tr>
     </table>
@@ -59,9 +59,6 @@
             </td>
             <td>
                 <select name="archer1" id="archer1">
-                    <option value="Thống">Thống</option>
-                    <option value="Tùng">Tùng</option>
-                    <option value="Thành">Thành</option>
                 </select>
             </td>
         </tr>
@@ -71,9 +68,6 @@
             </td>
             <td>
                 <select name="archer2" id="archer2">
-                    <option value="Thống">Thống</option>
-                    <option value="Tùng">Tùng</option>
-                    <option value="Thành">Thành</option>
                 </select>
             </td>
         </tr>
@@ -84,14 +78,14 @@
             <td>
                 <select name="matchType" id="matchtype">
                     <option value="Recurve">Recurve</option>
-                    <option value="Compound">Compound</option>
-                    <option value="Barebow">Barebow</option>
+<!--                    <option value="Compound">Compound</option>-->
+<!--                    <option value="Barebow">Barebow</option>-->
                 </select>
             </td>
         </tr>
         <tr>
             <td colspan="2">
-                <button>Start</button>
+                <button onclick="startMatch()">Start</button>
             </td>
         </tr>
     </table>
@@ -100,11 +94,11 @@
 <div>
     <table>
         <tr>
-            <th>Archer 1</th>
-            <th>0</th>
+            <th id="a1name">Archer 1</th>
+            <th id="a1setpoint">0</th>
             <th>-</th>
-            <th>0</th>
-            <th>Archer 2</th>
+            <th id="a2setpoint">0</th>
+            <th id="a2name">Archer 2</th>
         </tr>
         <tr>
             <td>
@@ -112,13 +106,9 @@
                 <input type="number" name="a1Shot2" id="a1Shot2">
                 <input type="number" name="a1Shot3" id="a1Shot3">
             </td>
-            <td>
-                00
-            </td><td>
-                -
-            </td><td>
-                00
-            </td>
+            <td id="a1total">00</td>
+            <td>-</td>
+            <td id="a2total">00</td>
             <td>
                 <input type="number" name="a2Shot1" id="a2Shot1">
                 <input type="number" name="a2Shot2" id="a2Shot2">
