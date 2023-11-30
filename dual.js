@@ -42,6 +42,8 @@ function startMatch(athlete1,athlete2) {
         scoreSheet = new Scoresheet(athlete1, athlete2);
         document.getElementById("a1name").innerText = scoreSheet.athlete1.name;
         document.getElementById("a2name").innerText = scoreSheet.athlete2.name;
+        document.getElementById("a1score").innerText = scoreSheet.athlete1.name;
+        document.getElementById("a2score").innerText = scoreSheet.athlete2.name;
         activePoint = document.getElementById("a1Shot1");
     }
 }
