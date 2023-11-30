@@ -102,39 +102,38 @@
         </tr>
         <tr>
             <td>
-                <input type="number" name="a1Shot1" id="a1Shot1">
-                <input type="number" name="a1Shot2" id="a1Shot2">
-                <input type="number" name="a1Shot3" id="a1Shot3">
+                <input type="number" name="a1Shot1" id="a1Shot1" readonly onclick="getActiveID()"/>
+                <input type="number" name="a1Shot2" id="a1Shot2" readonly onclick="getActiveID()"/>
+                <input type="number" name="a1Shot3" id="a1Shot3" readonly onclick="getActiveID()"/>
             </td>
             <td id="a1total">00</td>
             <td>-</td>
             <td id="a2total">00</td>
             <td>
-                <input type="number" name="a2Shot1" id="a2Shot1">
-                <input type="number" name="a2Shot2" id="a2Shot2">
-                <input type="number" name="a2Shot3" id="a2Shot3">
+                <input type="number" name="a2Shot1" id="a2Shot1" readonly onclick="getActiveID()"/>
+                <input type="number" name="a2Shot2" id="a2Shot2" readonly onclick="getActiveID()"/>
+                <input type="number" name="a2Shot3" id="a2Shot3" readonly onclick="getActiveID()"/>
             </td>
         </tr>
         <tr>
             <td colspan="5">
-                <button>Set</button>
+                <button onclick="setEnd()">Set</button>
             </td>
         </tr>
         <tr>
             <td colspan="5">
-                <button>0</button>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>10</button>
-                <button>x</button>
-                <button>Del</button>
+                <button value="0" onclick="pointInput(this.value)">0</button>
+                <button value="1" onclick="pointInput(this.value)">1</button>
+                <button value="2" onclick="pointInput(this.value)">2</button>
+                <button value="3" onclick="pointInput(this.value)">3</button>
+                <button value="4" onclick="pointInput(this.value)">4</button>
+                <button value="5" onclick="pointInput(this.value)">5</button>
+                <button value="6" onclick="pointInput(this.value)">6</button>
+                <button value="7" onclick="pointInput(this.value)">7</button>
+                <button value="8" onclick="pointInput(this.value)">8</button>
+                <button value="9" onclick="pointInput(this.value)">9</button>
+                <button value="10" onclick="pointInput(this.value)">10</button>
+                <button onclick="deletePoint()">Del</button>
             </td>
         </tr>
     </table>
@@ -154,6 +153,7 @@
             <th>3</th>
             <th>Total</th>
         </tr>
+        <tbody id="a1sheet">
         <tr>
             <td>1</td>
             <td></td>
@@ -182,6 +182,7 @@
             <td></td>
             <th></th>
         </tr>
+        </tbody>
     </table>
     <table border=1 class="inlineTable">
         <tr>
@@ -196,6 +197,7 @@
             <th>3</th>
             <th>Total</th>
         </tr>
+        <tbody id="a2sheet">
         <tr>
             <td>1</td>
             <td></td>
@@ -224,6 +226,7 @@
             <td></td>
             <th></th>
         </tr>
+        </tbody>
     </table>
 </div>
 <div>

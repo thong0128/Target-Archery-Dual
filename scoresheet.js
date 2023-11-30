@@ -11,12 +11,12 @@ class Scoresheet {
         this.a2TotalSP= 0;
         this.status = true;
     }
-    setPointA1(i,point){
-        this.a1SetPoint[i] = point;
-    }
-    setPointA2(i,point){
-        this.a2SetPoint[i] = point;
-    }
+    // setPointA1(i,point){
+    //     this.a1SetPoint[i] = point;
+    // }
+    // setPointA2(i,point){
+    //     this.a2SetPoint[i] = point;
+    // }
     totalSetPoint(){
         this.a1TotalSP = this.a1SetPoint.reduce((a,b) => a + b, 0);
         this.a2TotalSP = this.a2SetPoint.reduce((a,b) => a + b, 0);
@@ -45,20 +45,27 @@ class Scoresheet {
         if (this.matchScore[0] >= 6) {
             this.athlete1.win++;
             this.athlete2.lose++;
+            this.athlete1.calWinRate();
+            this.athlete2.calWinRate();
+            alert(`Congratulation ${this.athlete1.name}`)
             this.status = false;
         } else if (this.matchScore[1] >= 6) {
             this.athlete2.win++;
             this.athlete1.lose++;
             this.status = false
+            this.athlete1.calWinRate();
+            this.athlete2.calWinRate();
+            alert(`Congratulation ${this.athlete2.name}`)
         }
     }
     endSet(){
         if (this.status){
-            this.totalSetPoint()
-            this.setCal()
-            this.updateSheet()
-            this.declareWinner()
+            this.totalSetPoint();
+            this.setCal();
+            this.updateSheet();
+            this.declareWinner();
         }else
-            alert("GameSet!")
+            alert("GameSet!");
+        showAthleteList();
     }
 }

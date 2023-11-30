@@ -7,10 +7,10 @@ class Archer {
         this.lose = 0;
         this.winRate = 0;
     }
-    matchWinVS(archer2){
-        this.win ++;
-        archer2.lose++;
-    }
+    // matchWinVS(archer2){
+    //     this.win ++;
+    //     archer2.lose++;
+    // }
     calWinRate(){
         if (this.lose !==0)
             this.winRate = this.win/(this.lose + this.win) * 100;
