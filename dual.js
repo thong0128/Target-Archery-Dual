@@ -48,6 +48,8 @@ function startMatch(athlete1,athlete2) {
     }
     resetCurrent();
     updateArcherSheet();
+    document.getElementById("a1setpoint").innerText = 0;
+    document.getElementById("a2setpoint").innerText = 0;
 }
 let activePoint;
 function getActiveID() {
