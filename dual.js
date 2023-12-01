@@ -46,6 +46,8 @@ function startMatch(athlete1,athlete2) {
         document.getElementById("a2score").innerText = scoreSheet.athlete2.name;
         activePoint = document.getElementById("a1Shot1");
     }
+    resetCurrent();
+    updateArcherSheet();
 }
 let activePoint;
 function getActiveID() {
